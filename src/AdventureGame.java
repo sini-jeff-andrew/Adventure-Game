@@ -79,7 +79,7 @@ public class AdventureGame {
 //        Initial user query
         System.out.println("\n\nStoner Hipster Lab-tech Carl: 'Sup" + heroName + "I'm Carl, the Car-man, the Car-ster, AKA Carlton Banks. But you can call me Spencer because I hate all those names. I knew a Spencer once, he was super chill.\n\n");
         System.out.println(heroName + ": Oh, dear God, I need a bathroom quick!\n\n");
-        System.out.println("Stoner Hipster Lab-tech Spencer: Whoa! Cool your jets, Brosef Stalin, there are somethings you need to know...\n");
+        System.out.println("Stoner Hipster Lab-tech Spencer: Whoa! Cool your jets, Brosef Stalin, there are some things you need to know...\n");
         System.out.println("...");
         scanner.nextLine();
         System.out.println("Stoner Hipster Lab-tech Carmax Spencer: Firstly, super sad news so brace yourself...Kobe died, bro. Helicopter crash. Never saw him play but it was blowing up on my twitter feed so, yeah, it's, like, the worst loss I've ever felt...that and my mother's.\n");
