@@ -1,7 +1,22 @@
 import java.util.Scanner;
 import java.util.Random;
 public class AdventureGame {
+
+
+
+
     public static void main(String[] args) {
+
+        hoarder hoarder1 = new hoarder();
+        hoarder1.health = 20;
+        hoarder1.attack = 10;
+        hoarder1.calcDamage();
+
+        hoarder hoarder2 = new hoarder();
+        hoarder2.health = 50;
+        hoarder2.health = 20;
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("A teenage hipster-stoner lab technician checks the labels on the stasis tubes lining the walls in the Fortune Cryogenics laboratory-turned-doomsday-bunker and notices the kitchen timer is mere seconds from dinging.\n\n");
         System.out.println("Lab-tech Carl: Oh, sweet I need this outlet to charge my vape.\n\n");
@@ -18,7 +33,7 @@ public class AdventureGame {
         System.out.println("Stoner Hipster Lab-tech Carmen San Diego Spencer: Oh, right, and there's a virus rampaging across the planet killing peeps. For reals. Governments have collapsed. Toilet paper is now the world's currency. Cash is pretty much useless...unless you're using it as toilet paper.\n");
         System.out.println("So, just so ya know, Brotein Shake, that bathroom visit gon' cost you 'bout a hundee...or I can make you a popsicle again...your choice.");
         System.out.println("OPTION 1 - “Get out of my way, you stoned loser!" + heroName + " is back to show this virus and the toilet who's boss!\n");
-        System.out.println("OPTION 2 - “Yes, for the love of God, you stoned loser, make me a popsicle again!");
+        System.out.println("OPTION 2 - “Yes, for the love of God, you stoned loser, make me a popsicle again!"  + hoarder1.calcDamage());
         String userInput = scanner.next();
         boolean confirmation = userInput.equals("1");
             if (confirmation) {
@@ -62,10 +77,16 @@ public class AdventureGame {
 
 
 
+    }
+    static class hoarder{
+        int health;
+        int attack;
+        double attackRoll = (Math.random() * 6) + 1;
 
 
+        int calcDamage(){
+            return (int) (health - attackRoll);
 
-
-
+        }
     }
 }
