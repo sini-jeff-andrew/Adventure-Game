@@ -55,6 +55,31 @@ public class AdventureGame {
                 System.out.println("Brawn: Only because I love you.\n\n");
                 System.out.println("The towering Chad charges at you inexorably! Ready yourself for combat!\n");
 
+                System.out.println("Choose your class by typing their name: \n Jock \n Nerd \n Introvert \n Type ready after entering your class name");
+                Scanner choosingClass = new Scanner(System.in);
+                String classComplete = "ready";
+                String jock = "You have chosen the class of Jock";
+                String nerd = "You have chosen the class of Nerd";
+                String introvert = "You have chosen the class Introvert";
+                String notAClass = "There is no such class!";
+                boolean decidingOnClass = true;
+                do {
+                    String userSelection = choosingClass.nextLine();
+                    if (userSelection.toLowerCase().equalsIgnoreCase(classComplete)){
+                        System.out.println("Begin your fight. Survive!");
+                        decidingOnClass = false;
+                    } else if (userSelection.equalsIgnoreCase("Jock")){
+                        System.out.println(jock);
+                    } else if (userSelection.equalsIgnoreCase("Nerd")){
+                        System.out.println(nerd);
+                    } else if (userSelection.equalsIgnoreCase("Introvert")){
+                        System.out.println(introvert);
+                    } else {
+                        System.out.println(notAClass);
+                    }
+                } while (decidingOnClass);
+
+
 
 
 
