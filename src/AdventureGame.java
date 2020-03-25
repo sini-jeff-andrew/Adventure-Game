@@ -109,9 +109,15 @@ public class AdventureGame {
                 System.out.println("Choose your class by typing their name: \n Jock \n Nerd \n Introvert \n Type ready after entering your class name");
                 Scanner choosingClass = new Scanner(System.in);
                 String classComplete = "ready";
-                String jock = "You have chosen the class of Jock";
-                String nerd = "You have chosen the class of Nerd";
-                String introvert = "You have chosen the class Introvert";
+                String jock = "You have chosen the class of Jock, your stats are: \n" +
+                        "Health: " +Jock.health + " | " +
+                        "Attack: " +Jock.attack ;
+                String nerd = "You have chosen the class of Nerd, your stats are: \n" +
+                        "Health: " +Nerd.health + " | " +
+                        "Attack: " +Nerd.attack ;
+                String introvert = "You have chosen the class Introvert, your stats are: \n" +
+                        "Health: " +Introvert.health + " | " +
+                        "Attack: " +Introvert.attack ;
                 String notAClass = "There is no such class!";
                 boolean decidingOnClass = true;
                 do {
@@ -129,6 +135,7 @@ public class AdventureGame {
                         System.out.println(notAClass);
                     }
                 } while (decidingOnClass);
+
 
 
 
