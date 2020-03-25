@@ -4,6 +4,22 @@ public class AdventureGame {
 
     public static void main(String[] args) {
 
+        hero Jock = new hero();
+        Jock.attack = 10;
+        Jock.health = 80;
+        Jock.totalDamage();
+
+        hero Nerd = new hero();
+        Nerd.attack = 4;
+        Nerd.health = 120;
+        Nerd.totalDamage();
+
+        hero Introvert = new hero();
+        Introvert.attack = 5;
+        Introvert.health = 100;
+        Introvert.totalDamage();
+
+
         weapon batWnails = new weapon();
         batWnails.damage = 4;
         batWnails.weaponBreaks = 8;
@@ -184,6 +200,16 @@ public class AdventureGame {
 
         boolean breaksWeapon(){
             return breaksWeapon == weaponBreaks;
+        }
+    }
+    static class hero{
+        int health;
+        int attack;
+        int attackIncrease = (int) ((Math.random() * 6) + 1);
+
+
+        int totalDamage(){
+            return (attackIncrease + attack);
         }
     }
 }
