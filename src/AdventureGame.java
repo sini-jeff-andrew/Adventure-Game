@@ -3,17 +3,22 @@ import java.util.Random;
 public class AdventureGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Wary from the day’s travels down many miles of bad road laden with brigands and ne’er-do-wells, you finally reach your destination:\n the quaint and run-down lakeside village of Fortune.\n\nThe desire to wet your whistle is overwhelming, the local tavern for meat, mead, and lodging is calling your name.\n\n  The tavern, like the rest of the village, has seen much better days and the lack of activity save for the burly innkeeper behind the bar is cause for concern,\n but you decide to sit regardless. Your posterior has barely hit the chair when a frothy mug is slammed down before you by the innkeeper.\n Innkeeper: What’s your name, traveler?\n\n");
+        System.out.println("A teenage hipster-stoner lab technician checks the labels on the stasis tubes lining the walls in the Fortune Cryogenics laboratory-turned-doomsday-bunker and notices the kitchen timer is mere seconds from dinging.\n\n");
+        System.out.println("Lab-tech Carl: Oh, sweet I need this outlet to charge my vape.\n\n");
+        System.out.println("As the timer DINGS, Carl pulls out the rat-gnawed extension cord from the human popsicle's machine and someone who desperately needed 50 bucks in exchange for a 6-month experiment rapidly thaws and stumbles out.\n\n");
+        System.out.println("Stoner Lab-tech Carl: Whoa, easy bruh! Last guy we thawed's legs shattered like, uh, ice. True story. It was super cool. What's your name, brosef?\n");
         String heroName = scanner.nextLine();
 
 
 //        Initial user query
-        System.out.println("Innkeeper: Hail and well met, " + heroName);
-        System.out.println("You reach for a silver coin and slide it across the bar to the innkeeper.\n" + heroName + "A bed, a meal, and mead for the night\n\n");
-        System.out.println("Innkeeper: All well and good but you can save you coin in exchange for brave deeds done and high adventure.\n");
-        System.out.println("Innkeeper: Do you fancy yourself an adventurer or are you just a traveler passing through?\n\n");
-        System.out.println("OPTION 1 - “My blade already runs red with the blood of those on the road in who tried to deprive me of gold and goods — tell me more of this quest!\n");
-        System.out.println("OPTION 2 - “I’m merely a traveling merchant — work and worry are all the adventure I can handle, count me out!\" \n");
+        System.out.println("\n\nStoner Hipster Lab-tech Carl: 'Sup" + heroName + "I'm Carl, the Car-man, the Car-ster, AKA Carlton Banks. But you can call me Spencer because I hate all those names. I knew a Spencer once, he was super chill.\n\n");
+        System.out.println(heroName + ": Oh, dear God, I need a bathroom quick!\n\n");
+        System.out.println("Stoner Hipster Lab-tech Spencer: Whoa! Cool your jets, Brosef Stalin, there are somethings you need to know...\n");
+        System.out.println("Stoner Hipster Lab-tech Carmax Spencer: Firstly, super sad news so brace yourself...Kobe died, bro. Helicopter crash. Never saw him play but it was blowing up on my twitter feed so, yeah, it's, like, the worst loss I've ever felt...that and my mother's.\n");
+        System.out.println("Stoner Hipster Lab-tech Carmen San Diego Spencer: Oh, right, and there's a virus rampaging across the planet killing peeps. For reals. Governments have collapsed. Toilet paper is now the world's currency. Cash is pretty much useless...unless you're using it as toilet paper.\n");
+        System.out.println("So, just so ya know, Brotein Shake, that bathroom visit gon' cost you 'bout a hundee...or I can make you a popsicle again...your choice.");
+        System.out.println("OPTION 1 - “Get out of my way, you stoned loser!" + heroName + " is back to show this virus and the toilet who's boss!\n");
+        System.out.println("OPTION 2 - “Yes, for the love of God, you stoned loser, make me a popsicle again!");
         String userInput = scanner.next();
         boolean confirmation = userInput.equals("1");
             if (confirmation) {
