@@ -2,15 +2,13 @@ import java.util.Scanner;
 import java.util.Random;
 public class AdventureGame {
 
-
-
-
     public static void main(String[] args) {
 
         weapon batWnails = new weapon();
         batWnails.damage = 4;
         batWnails.weaponBreaks = 8;
         batWnails.totalDamage();
+        batWnails.breaksWeapon();
 
 
         weapon rustyScalpel = new weapon();
