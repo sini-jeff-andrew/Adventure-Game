@@ -7,15 +7,52 @@ public class AdventureGame {
 
     public static void main(String[] args) {
 
+        weapon batWnails = new weapon();
+        batWnails.damage = 4;
+        batWnails.weaponBreaks = 8;
+        batWnails.totalDamage();
+
+
+        weapon rustyScalpel = new weapon();
+        rustyScalpel.damage = 5;
+        rustyScalpel.weaponBreaks = 25;
+        rustyScalpel.totalDamage();
+
+
+        weapon usedSyringe = new weapon();
+        usedSyringe.damage = 3;
+        usedSyringe.weaponBreaks = 8;
+        usedSyringe.totalDamage();
+
+
+        weapon hamHocks = new weapon();
+        hamHocks.damage = 1;
+        hamHocks.weaponBreaks = 99;
+        hamHocks.totalDamage();
+
+
+        weapon hockeyStickWithPizzaCutter = new weapon();
+        hockeyStickWithPizzaCutter.damage = 7;
+        hockeyStickWithPizzaCutter.weaponBreaks = 15;
+        usedSyringe.totalDamage();
+
+
+        hoarder masterBlaster = new hoarder();
+        masterBlaster.health = 60;
+        masterBlaster.attack = 10;
+        masterBlaster.calcDamage();
+
+
         hoarder hoarder1 = new hoarder();
         hoarder1.health = 20;
         hoarder1.attack = 10;
         hoarder1.calcDamage();
 
+
         hoarder hoarder2 = new hoarder();
         hoarder2.health = 50;
         hoarder2.health = 20;
-
+        masterBlaster.calcDamage();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("A teenage hipster-stoner lab technician checks the labels on the stasis tubes lining the walls in the Fortune Cryogenics laboratory-turned-doomsday-bunker and notices the kitchen timer is mere seconds from dinging.\n\n");
@@ -135,6 +172,20 @@ public class AdventureGame {
         int calcDamage(){
             return (int) (health - attackRoll);
 
+        }
+    }
+    static class weapon{
+        int damage;
+        int breaksWeapon;
+        int weaponBreaks = (int) ((Math.random() * 99) + 1);
+        int damageIncrease = (int) ((Math.random() * 6) + 1);
+
+        int totalDamage(){
+            return (damageIncrease + damage);
+        }
+
+        boolean breaksWeapon(){
+            return breaksWeapon == weaponBreaks;
         }
     }
 }
