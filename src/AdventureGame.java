@@ -29,23 +29,46 @@ public class AdventureGame {
         System.out.println("\n\nStoner Hipster Lab-tech Carl: 'Sup" + heroName + "I'm Carl, the Car-man, the Car-ster, AKA Carlton Banks. But you can call me Spencer because I hate all those names. I knew a Spencer once, he was super chill.\n\n");
         System.out.println(heroName + ": Oh, dear God, I need a bathroom quick!\n\n");
         System.out.println("Stoner Hipster Lab-tech Spencer: Whoa! Cool your jets, Brosef Stalin, there are somethings you need to know...\n");
+        System.out.println("...");
+        scanner.nextLine();
         System.out.println("Stoner Hipster Lab-tech Carmax Spencer: Firstly, super sad news so brace yourself...Kobe died, bro. Helicopter crash. Never saw him play but it was blowing up on my twitter feed so, yeah, it's, like, the worst loss I've ever felt...that and my mother's.\n");
         System.out.println("Stoner Hipster Lab-tech Carmen San Diego Spencer: Oh, right, and there's a virus rampaging across the planet killing peeps. For reals. Governments have collapsed. Toilet paper is now the world's currency. Cash is pretty much useless...unless you're using it as toilet paper.\n");
         System.out.println("So, just so ya know, Brotein Shake, that bathroom visit gon' cost you 'bout a hundee...or I can make you a popsicle again...your choice.");
         System.out.println("OPTION 1 - “Get out of my way, you stoned loser!" + heroName + " is back to show this virus and the toilet who's boss!\n");
-        System.out.println("OPTION 2 - “Yes, for the love of God, you stoned loser, make me a popsicle again!"  + hoarder1.calcDamage());
+        System.out.println("OPTION 2 - “Yes, for the love of God, you stoned loser, make me a popsicle again!\n");
         String userInput = scanner.next();
         boolean confirmation = userInput.equals("1");
             if (confirmation) {
-                System.out.println("Excellent, let us begin your grand adventure!");
+                System.out.println("Suh-weet! Do your thing, Abroham Lincol-UGH!\n");
+                System.out.println("Super-lame stoner bro Carl Spencer is violently shoved to the side by " + heroName + " as he makes a mad dash to the bathroom.\n");
+                System.out.println("Stoner Hipster Lab Tech Carl Lewis Stephenson Spencer Bro: Whoa, not cool, C3P-Bro! Civilization is dead but that doesn't mean being excellent to each other has to die, too!\n");
+                System.out.println("47 MINUTES LATER...\n");
+                scanner.nextLine();
+                System.out.println("CRASH! The doorway to the alley is bashed down by a ferocious blow from a hulking behemoth with a much smaller man on his shoulders. Super-lame Stoner\n Caramel Suspenser catches the brunt of it, sending his brand new vape pen to the floor and shattering it into a bajillion pieces.\n");
+                System.out.println("Stoner Lab-tech Carmellion Spenceriferous: NOT CHILL, Joe Brogan, that was my last cartridge, it cost me 5 rolls of solid gold T-pizzle!\n");
+                System.out.println("Intrepid human popsicle " + heroName + " returns from the bathroom five pounds lighter just in time to see noble hipster junior lab-tech stoner first-class Lord Carltese Spencerton IV die a hero's death as the monstrosity deals him a mortal wound from his epic weapon: a hockey stick lined with the round blades from pizza cutters\n\n");
+                System.out.println("My...ugh...mother-lode...Teddy -- Brosevelt...pro-tect...the TP...it's priceless!....ugh.....dying is so lame...\n");
+                scanner.nextLine();
+                System.out.println(heroName + ": NO! Not, Lrac Recneps! I barely knew him!\n");
+                System.out.println("The much smaller man jumps down from the shoulders of his human mount and quickly scampers toward the ultimate objective: AN ENTIRE BOX OF GIANT CHARMIN SUPER-SOFT ROLLS! He dances like a leprechaun atop a small mountain of gold.\n\n");
+                System.out.println("Brains: It's MINE...All mine!...You'll never get me golden rolls! Brawn, slice and dice him!");
+                System.out.println("Brawn: Only because I love you.\n\n");
+                System.out.println("The towering Chad charges at you inexorably! Ready yourself for combat!\n");
+
+
+
+
             }
             else {
-                System.out.println("A life of work and worry for you it is!");
+                System.out.println("Back in the freezer with you!");
             }
+
+
+
 
 //   ***************Story begins here*******************
 //
-//
+//+ hoarder1.calcDamage());
 //
 //
 //
