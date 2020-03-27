@@ -148,7 +148,7 @@ public class AdventureGame {
 
 
 
-
+//pokusaj da koristis jebini constructor da zavrsis
 //   ***************Story begins here*******************
 //
 //+ hoarder1.calcDamage());
